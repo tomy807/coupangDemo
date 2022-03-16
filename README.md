@@ -149,3 +149,4 @@
 
 ## 쿠팡 ERD 설계후 API 구현
 
+![CoupangTableDB_20220316_184311](https://user-images.githubusercontent.com/44529918/158561855-7d37cc3a-d745-4ff1-a67a-d7edcc304f28.png)
