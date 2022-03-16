@@ -10,6 +10,7 @@ import com.example.demo.utils.JwtService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,6 +24,8 @@ public class UserProvider {
     private final UserDao userDao;
     private final JwtService jwtService;
 
+    @Value("${secret.user_info_password_key}")
+    private String userInfoPasswordKey;
 
     final Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -113,7 +116,7 @@ public class UserProvider {
         User user = userDao.getPwd(postLoginReq);
         String password;
         try {
-            password = new AES128(Secret.USER_INFO_PASSWORD_KEY).decrypt(user.getPassword());
+            password = new AES128(userInfoPasswordKey).decrypt(user.getPassword());
         } catch (Exception ignored) {
             throw new BaseException(PASSWORD_DECRYPTION_ERROR);
         }
