@@ -25,20 +25,6 @@
 hs_err_pid*
 
 
-
-
-
-
-
-
-
-
-
-Secret.jar
-Secret.class
-application.yml
-
-
 /src/main/java/com/example/demo/config/secret.Secret.java
 
 log/
