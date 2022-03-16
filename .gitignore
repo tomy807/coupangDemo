@@ -4,6 +4,8 @@
 # Log file
 *.log
 
+/
+
 # BlueJ files
 *.ctxt
 
@@ -48,3 +50,4 @@ target/
 # Project exclude paths
 /.gradle/
 /build/
+/src/main/java/com/example/demo/config/secret/
