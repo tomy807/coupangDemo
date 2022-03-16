@@ -4,8 +4,6 @@
 # Log file
 *.log
 
-/
-
 # BlueJ files
 *.ctxt
 
@@ -25,6 +23,20 @@
 hs_err_pid*
 
 
+
+
+
+
+
+
+
+
+
+Secret.jar
+Secret.class
+application.yml
+
+
 /src/main/java/com/example/demo/config/secret.Secret.java
 
 log/
@@ -36,4 +48,3 @@ target/
 # Project exclude paths
 /.gradle/
 /build/
-/src/main/java/com/example/demo/config/secret/
