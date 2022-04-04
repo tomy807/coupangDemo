@@ -81,7 +81,7 @@
         listen 80;
         listen [::]:80;
 
-        server_name 13.124.22.35;
+        server_name ;
 
         root /var/www/html;
         index index.html;
